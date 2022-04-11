@@ -1,16 +1,13 @@
 # Dogicon
+A personalised Dog Wallpaper App for the Dog Lovers.
 
-Using Pexels API to get the Wallpapers and displaying it in Grid View.
+## Learning Outcomes:
+  - Using http package to interact with API
+  - Explored and worked with Grid View Builder
+  - Flutter Wallpaper Manager to change phone WallPaper
+## Api Used : Pexels Api
+  - Get ur api key at : https://www.pexels.com/api/
+  - Place the UR Api Key at line 28 and 49 in file wallpaper.dart
+  - Build the App and Run
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
