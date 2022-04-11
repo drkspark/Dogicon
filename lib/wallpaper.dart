@@ -20,11 +20,13 @@ class _WallpaperState extends State<Wallpaper> {
   }
 
   fetchapi() async {
-    await http.get(Uri.parse('https://api.pexels.com/v1/curated?per_page=80'),
-        headers: {
-          'Authorization':
-              '563492ad6f91700001000001cc636c789a9242fa8419a73531c5f266'
-        }).then((value) {
+    // String base = 'https://api.pexels.com/v1/curated?per_page=80';
+    String base = 'https://api.pexels.com/v1/search?query=dog&per_page=80';
+
+    await http.get(Uri.parse(base), headers: {
+      'Authorization':
+          '563492ad6f91700001000001cc636c789a9242fa8419a73531c5f266'
+    }).then((value) {
       Map result = jsonDecode(value.body);
       setState(() {
         images = result['photos'];
@@ -37,8 +39,11 @@ class _WallpaperState extends State<Wallpaper> {
     setState(() {
       page = page + 1;
     });
+    // String url ='https://api.pexels.com/v1/curated?per_page=80&page=' + page.toString();
     String url =
-        'https://api.pexels.com/v1/curated?per_page=80&page=' + page.toString();
+        'https://api.pexels.com/v1/search?query=dogs&per_page=80&page=' +
+            page.toString();
+
     await http.get(Uri.parse(url), headers: {
       'Authorization':
           '563492ad6f91700001000001cc636c789a9242fa8419a73531c5f266'
