@@ -1,4 +1,4 @@
-# wall_paper_app
+# Dogicon
 
 Using Pexels API to get the Wallpapers and displaying it in Grid View.
 
