@@ -30,6 +30,9 @@ dependencies:
   flutter:
     sdk: flutter
   http:
+  flutter_wallpaper_manager:
+  flutter_launcher_icons:
+  flutter_cache_manager:
 
 
   # The following adds the Cupertino Icons font to your application.
