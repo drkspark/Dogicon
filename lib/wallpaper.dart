@@ -25,7 +25,7 @@ class _WallpaperState extends State<Wallpaper> {
 
     await http.get(Uri.parse(base), headers: {
       'Authorization':
-          '563492ad6f91700001000001cc636c789a9242fa8419a73531c5f266'
+          'UR API KEY'
     }).then((value) {
       Map result = jsonDecode(value.body);
       setState(() {
@@ -46,7 +46,7 @@ class _WallpaperState extends State<Wallpaper> {
 
     await http.get(Uri.parse(url), headers: {
       'Authorization':
-          '563492ad6f91700001000001cc636c789a9242fa8419a73531c5f266'
+          'UR API KEY'
     }).then((value) {
       Map result = jsonDecode(value.body);
       setState(() {
